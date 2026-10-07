@@ -16,7 +16,7 @@ def get_api_key() -> str:
 
 def get_request_timeout() -> int:
     """Return a positive integer timeout from the environment."""
-    raw = os.getenv("REQUEST_TIMEOUT", "8")
+    raw = os.getenv("REQUEST_TIMEOUT", "5")
     try:
         value = int(raw)
     except ValueError as exc:
